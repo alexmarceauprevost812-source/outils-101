@@ -1,0 +1,98 @@
+{
+  "network_config": {
+    "default_network": "192.168.1.0/24",
+    "scan_timeout": 10,
+    "port_scan_timeout": 2
+  },
+  "automation": {
+    "enabled": false,
+    "scan_interval": 60,
+    "alert_on_new_device": true,
+    "alert_on_disconnect": true
+  },
+  "security_thresholds": {
+    "new_devices_per_hour": 10,
+    "connection_rate": 50,
+    "port_scans": 20,
+    "failed_auth_attempts": 5,
+    "mac_changes_per_device": 3
+  },
+  "reporting": {
+    "generate_html": true,
+    "generate_json": true,
+    "report_dir": "reports/",
+    "export_dir": "exports/"
+  },
+  "monitoring": {
+    "monitor_duration": 30,
+    "update_interval": 5,
+    "live_display": true
+  },
+  "geoip": {
+    "local_country": "CA",
+    "api_provider": "ip-api.com",
+    "alert_on_foreign_ip": true
+  },
+  "wifi_security": {
+    "minimum_wpa_version": 2,
+    "alert_on_wps": true,
+    "alert_on_weak_encryption": true
+  },
+  "dangerous_ports": {
+    "23": {
+      "service": "Telnet",
+      "risk": "CRITICAL",
+      "reason": "Non chiffré"
+    },
+    "21": {
+      "service": "FTP",
+      "risk": "CRITICAL",
+      "reason": "Non chiffré"
+    },
+    "69": {
+      "service": "TFTP",
+      "risk": "MEDIUM",
+      "reason": "Pas d'authentification"
+    },
+    "111": {
+      "service": "RPC",
+      "risk": "MEDIUM",
+      "reason": "Exposition services"
+    },
+    "135": {
+      "service": "RPC Windows",
+      "risk": "MEDIUM",
+      "reason": "Exploitation possible"
+    }
+  },
+  "device_categories": {
+    "computer": ["PC", "MacBook", "Laptop"],
+    "phone": ["iPhone", "Samsung", "Android"],
+    "iot": ["Raspberry", "Arduino", "Camera", "Printer"],
+    "network": ["Router", "Switch", "Access Point"],
+    "tv": ["Smart TV", "Apple TV", "Chromecast"]
+  },
+  "logging": {
+    "log_directory": "logs/",
+    "history_file": "logs/devices_history.json",
+    "alerts_file": "logs/alerts.json",
+    "threats_file": "logs/threats.json",
+    "max_history_entries": 10000
+  },
+  "ssl_audit": {
+    "check_expiry": true,
+    "check_self_signed": true,
+    "check_weak_cipher": true,
+    "minimum_tls_version": "1.2"
+  },
+  "features": {
+    "dns_lookup": true,
+    "geoip_lookup": true,
+    "ssl_audit": true,
+    "port_scan": true,
+    "traffic_monitor": true,
+    "mac_spoofing_detection": true,
+    "ids_system": true,
+    "html_reports": true
+  }
+}

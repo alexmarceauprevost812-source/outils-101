@@ -1,0 +1,328 @@
+╔══════════════════════════════════════════════════════════════════════════╗
+║                                                                            ║
+║                      🛡️  OUTILS 101 - VERSION 2.0                         ║
+║                                                                            ║
+║                    Surveillance WiFi & Audit Sécurité                     ║
+║                           Complètement Amélioré!                          ║
+║                                                                            ║
+╚══════════════════════════════════════════════════════════════════════════╝
+
+
+🎉 QUOI DE NEUF DANS LA VERSION 2.0?
+═════════════════════════════════════════════════════════════════════════════
+
+Avant (v1.0)                                Après (v2.0)
+├─ 10 outils basiques                       ├─ 18 options de menu
+├─ Scanner réseau                           ├─ Scanner + 5 outils majeurs ⭐
+├─ Port scan                                ├─ Rapport HTML complet ⭐
+├─ Audit WiFi basique                       ├─ Monitoring trafic ⭐
+├─ SSL/TLS audit                            ├─ Détection spoofing ⭐
+├─ DNS lookup                               ├─ Audit WiFi avancé ⭐
+├─ Géolocalisation IP                       ├─ Système IDS ⭐
+├─ Automatisation                           ├─ Automatisation améliorée
+├─ Storage (devices.json)                   ├─ Storage + historique complet
+└─ CLI simple                               └─ CLI professionnel
+
+
+⭐ LES 5 NOUVEAUX OUTILS MAJEURS
+═════════════════════════════════════════════════════════════════════════════
+
+1. 📊 REPORT GENERATOR (report_generator.py - 283 lignes)
+   ├─ Génère rapport HTML professionnel
+   ├─ Combine tous les outils
+   ├─ Statistiques réseau
+   ├─ Export JSON structuré
+   └─ Interface beautifully formée
+
+2. 📡 TRAFFIC MONITOR (traffic_monitor.py - 158 lignes)
+   ├─ Monitoring trafic temps réel
+   ├─ Connexions actives
+   ├─ Processus réseau
+   ├─ Détection anomalies
+   └─ Seuils configurables
+
+3. 🚨 MAC SPOOFING DETECTOR (mac_spoofing_detector.py - 195 lignes)
+   ├─ Détecte 1 IP → plusieurs MACs
+   ├─ Détecte MAC changeant d'IP
+   ├─ Détecte changement de fabricant (OUI)
+   ├─ Analyse historique
+   └─ 3 niveaux de vérification
+
+4. 🛡️ WiFi SECURITY AUDIT (wifi_security_audit.py - 245 lignes)
+   ├─ Audit WiFi avancé
+   ├─ Score 0-10 par réseau
+   ├─ Détecte WPS (vulnérable)
+   ├─ Détecte TKIP (faible)
+   ├─ Détecte WPA1 (obsolète)
+   └─ Recommandations auto
+
+5. 🚨 INTRUSION DETECTION (intrusion_detection.py - 282 lignes)
+   ├─ Détecte DDoS (>50 connexions)
+   ├─ Détecte port scans agressifs (>20 ports)
+   ├─ Détecte afflux appareils (>10/h)
+   ├─ Détecte MAC spoofing (3+ changes)
+   ├─ Détecte services dangereux (Telnet, FTP...)
+   └─ Export des menaces
+
+
+📈 STATISTIQUES DU PROJET
+═════════════════════════════════════════════════════════════════════════════
+
+Fichiers:
+  Python Code        : 17 modules outils101/
+  CLI                : 1 interface principale
+  Documentation      : 9 fichiers markdown
+  Configuration      : 1 exemple JSON
+  Tests              : 1 script installation
+  Installation       : 1 script shell
+  ─────────────────────────────────────
+  Total              : 30 fichiers
+
+Code:
+  Python             : ~5,100 lignes
+  Documentation      : ~2,800 lignes
+  Configuration      : ~100 lignes
+  ─────────────────────────────────────
+  Total              : ~8,000 lignes
+
+Dépendances:
+  scapy              : Scan ARP + paquets réseau
+  requests           : HTTP (géolocalisation)
+  ─────────────────────────────────────
+  Total              : 2 dépendances SEULEMENT
+
+
+🚀 MENU PRINCIPAL (18 OPTIONS)
+═════════════════════════════════════════════════════════════════════════════
+
+GROUPE 1: DÉCOUVERTE RÉSEAU
+  1. Scanner le réseau
+  2. Afficher résumé
+  3. Renommer appareil
+  4. Scanner ports
+
+GROUPE 2: AUDIT SÉCURITÉ
+  5. Auditer appareil (versions vuln)
+  6. Auditer WiFi (basique)
+  7. DNS Reverse Lookup
+  8. Géolocalisation IP
+  9. Audit SSL/TLS
+
+GROUPE 3: AUTOMATISATION
+  10. Automatisation (scan continu)
+  11. Voir les alertes
+  12. Voir l'historique
+
+GROUPE 4: ⭐ NOUVEAUX OUTILS v2.0
+  13. 📊 Générer rapport HTML
+  14. 📡 Monitoring trafic en direct
+  15. 🚨 Détection MAC spoofing
+  16. 🛡️ Audit WiFi avancé
+  17. 🚨 Système de détection d'intrusion (IDS)
+
+QUITTER
+  18. Quitter
+
+
+📊 FICHIERS GÉNÉRÉS AUTOMATIQUEMENT
+═════════════════════════════════════════════════════════════════════════════
+
+Après chaque utilisation:
+
+devices.json                         # Appareils connus
+
+logs/
+├── devices_history.json            # Historique complet
+└── alerts.json                     # Alertes détectées
+
+reports/
+└── audit_report_YYYYMMDD_HHMMSS.html
+
+exports/
+└── audit_export_YYYYMMDD_HHMMSS.json
+
+threats/
+└── threats_YYYYMMDD_HHMMSS.json    # Menaces IDS
+
+
+🎯 CAS D'USAGE
+═════════════════════════════════════════════════════════════════════════════
+
+"Qui est connecté à mon WiFi?"
+  → Menu 1 (Scanner) + Menu 3 (Renommer)
+
+"Mon WiFi est sécurisé?"
+  → Menu 16 (Audit WiFi avancé)
+
+"Quelqu'un s'est connecté sans permission?"
+  → Menu 15 (MAC spoofing) + Menu 16 (Audit WiFi)
+
+"Il y a une activité bizarre?"
+  → Menu 17 (Système IDS) + Menu 14 (Monitoring)
+
+"Je veux un rapport?"
+  → Menu 13 (Rapport HTML)
+
+
+⚡ INSTALLATION RAPIDE
+═════════════════════════════════════════════════════════════════════════════
+
+Linux/macOS:
+  sudo bash install.sh
+  sudo python3 main.py
+
+Windows:
+  1. Installe Npcap (https://npcap.com/)
+  2. pip install -r requirements.txt
+  3. python main.py (en Admin)
+
+
+✅ TESTS AUTOMATIQUES
+═════════════════════════════════════════════════════════════════════════════
+
+python3 test_installation.py
+
+Vérifie:
+  ✓ Python 3.7+
+  ✓ Tous les imports
+  ✓ Dépendances (scapy, requests)
+  ✓ Structure fichiers
+  ✓ Répertoires
+  ✓ Permissions d'écriture
+  ✓ CLI chargeable
+
+
+📚 DOCUMENTATION COMPLÈTE
+═════════════════════════════════════════════════════════════════════════════
+
+START_HERE.md        ← Démarrage rapide (TU ES ICI!)
+QUICKSTART.md        ← Guide 5-10 minutes
+README.md            ← Documentation complète (332 lignes)
+INSTALLATION.md      ← Installation détaillée par OS (373 lignes)
+HELP.txt             ← Aide rapide du menu
+CHANGELOG.md         ← Historique v2.0 (226 lignes)
+CONTRIBUTING.md      ← Comment contribuer (376 lignes)
+DEV_SUMMARY.md       ← Architecture pour devs (431 lignes)
+config_example.json  ← Configuration exemple
+test_installation.py ← Script de test (193 lignes)
+install.sh           ← Installation auto (136 lignes)
+
+
+🔒 SÉCURITÉ & USAGE
+═════════════════════════════════════════════════════════════════════════════
+
+✅ CE QUE TU PEUX FAIRE:
+  ✓ Scanner ton réseau
+  ✓ Détecter les nouveaux appareils
+  ✓ Auditer la sécurité WiFi
+  ✓ Générer des rapports
+  ✓ Apprendre la cybersecurité
+  ✓ Monitorer ton réseau
+
+❌ CE QUE TU NE PEUX PAS FAIRE:
+  ✗ Scanner réseau d'autrui (illégal!)
+  ✗ Brute-force WiFi
+  ✗ Déauthentification
+  ✗ Utiliser sur réseau public
+  ✗ Exploiter vulnérabilités
+  ✗ Man-in-the-middle
+
+⚖️  LÉGAL: À usage défensif uniquement, sur TON réseau
+
+
+🌟 POINTS FORTS v2.0
+═════════════════════════════════════════════════════════════════════════════
+
+  ✨ 5 nouveaux outils majeurs
+  ✨ 18 options au lieu de 13
+  ✨ Rapports HTML professionnels
+  ✨ Monitoring temps réel
+  ✨ Détection intrusions
+  ✨ Détection spoofing
+  ✨ 8,000+ lignes de code
+  ✨ Documentation ultra-complète
+  ✨ Cross-platform (Linux/Windows/macOS)
+  ✨ Installation automatique
+  ✨ Tests intégrés
+  ✨ 100% open source
+
+
+🐧🌀 PRÊT À DÉMARRER?
+═════════════════════════════════════════════════════════════════════════════
+
+1. Installation (2 min):
+   sudo bash install.sh
+
+2. Premier scan (1 min):
+   sudo python3 main.py
+   → Menu 1
+
+3. Vérifier ton WiFi (2 min):
+   → Menu 16
+
+4. Générer rapport (1 min):
+   → Menu 13
+
+Total: 6 minutes pour avoir un audit complet! 🚀
+
+
+📖 DOCUMENTATION PAR CAS D'USAGE
+═════════════════════════════════════════════════════════════════════════════
+
+Pressé (5 min)?                    → QUICKSTART.md
+Besoin d'aide d'installation?      → INSTALLATION.md
+Veux comprendre le projet?         → README.md
+Problèmes techniques?              → HELP.txt
+Es-tu développeur?                 → DEV_SUMMARY.md
+Veux contribuer?                   → CONTRIBUTING.md
+Première utilisation?              → START_HERE.md
+Besoin d'un coup d'œil?            → Ce fichier (SUMMARY.txt)
+
+
+🎓 CAS D'APPRENTISSAGE
+═════════════════════════════════════════════════════════════════════════════
+
+Pour étudiant en cybersécurité:
+  1. Apprendre ARP scan (Menu 1)
+  2. Apprendre port scan (Menu 4)
+  3. Apprendre SSL/TLS (Menu 9)
+  4. Apprendre WiFi (Menu 16)
+  5. Apprendre IDS (Menu 17)
+
+Pour administrateur réseau:
+  1. Utiliser automatisation (Menu 10)
+  2. Monitorer trafic (Menu 14)
+  3. Détecter intrusions (Menu 17)
+  4. Générer rapports (Menu 13)
+
+Pour utilisateur standard:
+  1. Scanner réseau (Menu 1)
+  2. Auditer WiFi (Menu 16)
+  3. Renommer appareils (Menu 3)
+  4. Gérer alertes (Menu 11)
+
+
+🚀 PROCHAINES MISES À JOUR POSSIBLES
+═════════════════════════════════════════════════════════════════════════════
+
+  • Interface web (Flask/Django)
+  • Dashboard graphique (tkinter/Qt)
+  • Base de données (SQLite)
+  • Export CSV
+  • Notifications en temps réel
+  • API REST
+  • Docker container
+  • Plugins système
+
+
+═════════════════════════════════════════════════════════════════════════════
+
+               Version 2.0 - PRODUCTION READY - 2024
+
+                    🐧🌀 Happy Scanning! 🐧🌀
+
+═════════════════════════════════════════════════════════════════════════════
+
+Questions? Lis START_HERE.md → QUICKSTART.md → README.md
+
+Prêt? Lance: sudo python3 main.py

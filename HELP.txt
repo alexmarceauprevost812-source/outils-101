@@ -1,0 +1,230 @@
+================================================================================
+  🛡️  OUTILS 101 - Aide Rapide
+================================================================================
+
+INSTALLATION:
+  Linux/macOS:    sudo pip install -r requirements.txt
+  Windows:        pip install -r requirements.txt
+                  (+ Installer Npcap depuis https://npcap.com/)
+
+LANCEMENT:
+  Linux/macOS:    sudo python3 main.py
+  Windows:        python main.py  (en mode Administrateur)
+
+TESTER INSTALLATION:
+  python3 test_installation.py
+
+================================================================================
+MENU PRINCIPAL (18 OPTIONS)
+================================================================================
+
+GROUPE 1 : DÉCOUVERTE RÉSEAU
+  1. Scanner le réseau (détecte appareils + MAC + IP)
+  2. Afficher résumé des appareils connus
+  3. Renommer un appareil (pour l'identifier plus tard)
+  4. Scanner les ports ouverts d'un appareil
+
+GROUPE 2 : AUDIT SÉCURITÉ
+  5. Auditer un appareil (versions vulnérables connues)
+  6. Auditer la sécurité WiFi (basique)
+  7. DNS Reverse Lookup (trouve hostname d'une IP)
+  8. Géolocalisation IP (localise d'où vient un appareil)
+  9. Audit SSL/TLS (vérifie certificats HTTPS)
+
+GROUPE 3 : AUTOMATISATION & LOGS
+  10. Automatisation (scan continu chaque X secondes)
+  11. Voir les alertes (NEW_DEVICE, DISCONNECTED...)
+  12. Voir l'historique des appareils
+
+GROUPE 4 : ⭐ NOUVEAUX OUTILS v2.0
+  13. Générer rapport HTML complet (audit professionnel)
+  14. Monitoring trafic en direct (connexions en temps réel)
+  15. Détection MAC spoofing (usurpation d'appareil)
+  16. Audit WiFi avancé (WPA2/WPA3, WPS, sécurité)
+  17. Système de détection d'intrusion IDS (menaces)
+
+QUITTER:
+  18. Quitter
+
+================================================================================
+CAS D'USAGE COURANTS
+================================================================================
+
+"Qui est connecté à mon WiFi ?"
+  → Menu 1 (Scanner) → Renomme tes appareils (Menu 3)
+
+"Comment un appareil inconnu s'est connecté ?"
+  → Menu 16 (Audit WiFi) → Vérifier protocole de sécurité
+  → Menu 15 (MAC spoofing) → Détecte les usurpations
+
+"Mon WiFi est-il sécurisé ?"
+  → Menu 16 (Audit WiFi avancé)
+  → Vérifier WPA2/WPA3, pas de WPS, pas de TKIP
+
+"Il y a une activité bizarre sur mon réseau"
+  → Menu 17 (Système IDS) → Détecte attaques/anomalies
+  → Menu 14 (Monitoring) → Vois les connexions en live
+
+"Je veux un rapport professionnel"
+  → Menu 13 (Rapport HTML)
+  → Ouvre le fichier dans le navigateur
+
+================================================================================
+FICHIERS GÉNÉRÉS
+================================================================================
+
+Après chaque utilisation:
+
+devices.json                  # Tous tes appareils
+logs/
+├── devices_history.json     # Historique (quand ils se connectent)
+└── alerts.json              # Alertes (NEW_DEVICE, DISCONNECTED)
+
+Sur demande (Menu 13):
+reports/
+└── audit_report_*.html      # Rapport HTML beautifully formé
+
+exports/
+└── audit_export_*.json      # Export JSON structuré
+
+threats/ (après Menu 17):
+└── threats_*.json           # Menaces détectées
+
+================================================================================
+CONSEILS PRATIQUES
+================================================================================
+
+✅ À FAIRE:
+  - Renommer tes appareils pour les identifier facilement
+  - Activer automation (Menu 10) pour surveillance continue
+  - Auditer WiFi régulièrement (Menu 16)
+  - Générer un rapport mensuel (Menu 13)
+
+❌ À NE PAS FAIRE:
+  - Ne scanner PAS un réseau qui n'est pas le tien (illégal!)
+  - Ne pas utiliser sur WiFi public/partagé
+  - Ne pas essayer de "casser" le WiFi
+  - Ne pas faire de brute-force
+
+⚠️  LIMITATIONS:
+  - Linux/macOS requièrent sudo/root
+  - Windows requiert mode Administrateur
+  - Npcap obligatoire sur Windows
+  - Geoip peut être bloqué dans certains réseaux
+
+================================================================================
+⭐ LES 5 NOUVEAUX OUTILS
+================================================================================
+
+1. RAPPORT HTML (Menu 13)
+   Crée un beau rapport professionnel en HTML
+   - Résumé du réseau (stats)
+   - Tous les appareils
+   - Alertes récentes
+   - Historique
+
+2. MONITORING TRAFIC (Menu 14)
+   Affiche le trafic réseau en temps réel
+   - Connexions actives
+   - Processus réseau
+   - Détection d'activités anormales
+
+3. DÉTECTION MAC SPOOFING (Menu 15)
+   Détecte les usurpations d'identité d'appareil
+   - Une IP avec plusieurs MACs
+   - Une MAC changeant d'IP
+   - Changement de fabricant (OUI)
+
+4. AUDIT WiFi AVANCÉ (Menu 16)
+   Audit complet de la sécurité WiFi
+   - WPA2/WPA3 + scoring (0-10)
+   - Détecte WPS (vulnérable)
+   - Détecte TKIP (chiffrement faible)
+   - Recommandations de sécurité
+
+5. SYSTÈME IDS (Menu 17)
+   Détecte les attaques et anomalies réseau
+   - Détecte DDoS (>50 connexions)
+   - Détecte port scans agressifs
+   - Alerte sur afflux d'appareils
+   - Détecte services dangereux (Telnet, FTP...)
+
+================================================================================
+PROBLÈMES COURANTS
+================================================================================
+
+"Permission denied" / "besoin de root"
+  → Linux/macOS: préfixe avec `sudo` : sudo python3 main.py
+  → Windows: Lance en mode Administrateur (clic droit)
+
+"Aucun appareil détecté"
+  → Assure-toi d'être connecté au WiFi
+  → Vérifie que DHCP est actif sur le routeur
+  → Réessaye le scan (Option 1)
+
+"Erreur scapy sur Windows"
+  → Installe Npcap: https://npcap.com/
+  → Redémarre Windows
+  → Relance en Administrateur
+
+"Pas de reverse DNS"
+  → C'est normal! Certains appareils ne renvoient pas leur hostname
+  → Pas grave, continue avec l'IP
+
+"API géolocalisation ne marche pas"
+  → Vérifie ta connexion Internet
+  → ip-api.com peut être bloqué dans certains réseaux
+
+================================================================================
+RACCOURCIS CLAVIER
+================================================================================
+
+Ctrl+C  : Arrête le programme (ou une boucle automation)
+Enter   : Valide une saisie ou la suggestion par défaut
+q       : Quitte une vue (certains cas)
+
+================================================================================
+DOCUMENTATION COMPLÈTE
+================================================================================
+
+README.md              : Guide complet du projet
+QUICKSTART.md          : Premiers pas (5 minutes)
+INSTALLATION.md        : Installation détaillée par OS
+CHANGELOG.md           : Historique des versions
+CONTRIBUTING.md        : Comment contribuer
+DEV_SUMMARY.md         : Résumé développeur
+config_example.json    : Configuration exemple
+test_installation.py   : Script de test
+
+================================================================================
+SUPPORT & AIDE
+================================================================================
+
+Erreur dans le code?
+  → Lance: python3 test_installation.py
+  → Vérifie les logs console
+
+Besoin d'aide installation?
+  → Lis: INSTALLATION.md
+
+Veux contribuer?
+  → Lis: CONTRIBUTING.md
+
+Questions générales?
+  → Lis: README.md et QUICKSTART.md
+
+================================================================================
+VERSION & INFOS
+================================================================================
+
+Outils 101 v2.0 - Complète avec 5 outils majeurs
+Plateforme: Linux, Windows, macOS
+Python: 3.7+
+Dépendances: scapy, requests
+Licence: Open Source (à usage défensif)
+
+⚖️  À USAGE DÉFENSIF UNIQUEMENT - Audite TON réseau, pas celui de quelqu'un d'autre!
+
+================================================================================
+🐧🌀 Happy scanning! 🐧🌀
+================================================================================
