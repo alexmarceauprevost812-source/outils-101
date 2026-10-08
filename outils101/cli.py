@@ -6,6 +6,7 @@ import sys
 from datetime import datetime
 
 from . import storage, vendor, wifiaudit, automation, dnslookup, geoip, ssl_audit
+from .banner_new import print_logo_ascii, print_welcome_banner, print_menu_header
 from .banner import grab_banner
 from .portscan import scan_ports
 from .scanner import arp_scan, get_local_network
@@ -452,12 +453,14 @@ MENU = """
 
 
 def main() -> None:
-    print(BANNER)
+    print_logo_ascii()
+    print_welcome_banner()
     print(AVERTISSEMENT)
 
     devices = storage.load_devices()
 
     while True:
+        print_menu_header()
         print(MENU)
         choix = input("Choix : ").strip()
 

@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outils 101 - Logo Défensive</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Courier New', monospace;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            background: rgba(22, 33, 62, 0.9);
+            border: 3px solid #00ff88;
+            border-radius: 15px;
+            padding: 40px;
+            max-width: 600px;
+            box-shadow: 0 0 30px rgba(0, 255, 136, 0.3);
+            text-align: center;
+        }
+
+        .logo-wrapper {
+            position: relative;
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 30px;
+            perspective: 1000px;
+        }
+
+        /* Épée Gauche */
+        .sword-left {
+            position: absolute;
+            left: 20px;
+            font-size: 80px;
+            animation: swing-left 2s ease-in-out infinite;
+            transform-origin: bottom center;
+        }
+
+        /* Épée Droite */
+        .sword-right {
+            position: absolute;
+            right: 20px;
+            font-size: 80px;
+            animation: swing-right 2s ease-in-out infinite;
+            transform-origin: bottom center;
+        }
+
+        /* Bouclier Central */
+        .shield-container {
+            position: relative;
+            width: 150px;
+            height: 180px;
+            margin: 0 auto;
+        }
+
+        .shield {
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, #00ff88 0%, #00cc6f 100%);
+            clip-path: polygon(50% 0%, 100% 20%, 100% 70%, 50% 100%, 0% 70%, 0% 20%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 0 20px rgba(0, 255, 136, 0.6);
+            position: relative;
+            animation: pulse-shield 2s ease-in-out infinite;
+        }
+
+        .shield::before {
+            content: "🛡️";
+            font-size: 80px;
+            position: absolute;
+            filter: drop-shadow(0 0 10px rgba(0, 255, 136, 0.8));
+        }
+
+        /* Animations */
+        @keyframes swing-left {
+            0%, 100% {
+                transform: rotate(-15deg);
+            }
+            50% {
+                transform: rotate(15deg);
+            }
+        }
+
+        @keyframes swing-right {
+            0%, 100% {
+                transform: rotate(15deg);
+            }
+            50% {
+                transform: rotate(-15deg);
+            }
+        }
+
+        @keyframes pulse-shield {
+            0%, 100% {
+                transform: scale(1);
+                box-shadow: 0 0 20px rgba(0, 255, 136, 0.6);
+            }
+            50% {
+                transform: scale(1.05);
+                box-shadow: 0 0 30px rgba(0, 255, 136, 0.9);
+            }
+        }
+
+        h1 {
+            color: #00ff88;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 0 0 10px rgba(0, 255, 136, 0.5);
+            letter-spacing: 2px;
+        }
+
+        .subtitle {
+            color: #00ff88;
+            font-size: 1.2em;
+            margin-bottom: 30px;
+            opacity: 0.8;
+        }
+
+        .features {
+            background: rgba(0, 255, 136, 0.1);
+            border: 2px solid #00ff88;
+            border-radius: 10px;
+            padding: 20px;
+            margin-top: 30px;
+            text-align: left;
+        }
+
+        .feature-item {
+            color: #00ff88;
+            margin: 10px 0;
+            padding: 8px;
+            border-left: 3px solid #00ff88;
+            padding-left: 15px;
+        }
+
+        .feature-title {
+            font-weight: bold;
+            color: #00ff88;
+        }
+
+        .version {
+            color: #00ff88;
+            margin-top: 20px;
+            font-size: 0.9em;
+            opacity: 0.7;
+        }
+
+        .status {
+            color: #00ff88;
+            padding: 10px;
+            background: rgba(0, 255, 136, 0.1);
+            border-radius: 5px;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+
+        .ascii-art {
+            color: #00ff88;
+            font-size: 0.8em;
+            margin-top: 20px;
+            white-space: pre;
+            font-family: 'Courier New', monospace;
+            line-height: 1.2;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Logo Graphique -->
+        <div class="logo-wrapper">
+            <div class="sword-left">⚔️</div>
+            <div class="shield-container">
+                <div class="shield"></div>
+            </div>
+            <div class="sword-right">⚔️</div>
+        </div>
+
+        <!-- Titre -->
+        <h1>⚔️ OUTILS 101 ⚔️</h1>
+        <div class="subtitle">DÉFENSE RÉSEAU ACTIVE</div>
+
+        <!-- Fonctionnalités -->
+        <div class="features">
+            <div class="feature-item">
+                <span class="feature-title">🛡️ BOUCLIER :</span> Protection WiFi complète
+            </div>
+            <div class="feature-item">
+                <span class="feature-title">⚔️ ÉPÉE GAUCHE :</span> Détection d'intrusions (IDS)
+            </div>
+            <div class="feature-item">
+                <span class="feature-title">⚔️ ÉPÉE DROITE :</span> Forensics & Honeypot
+            </div>
+            <div class="feature-item">
+                <span class="feature-title">📊 OUTILS :</span> 17 modules • 21 options
+            </div>
+            <div class="feature-item">
+                <span class="feature-title">🖥️ SUPPORT :</span> Linux • Windows 11 • macOS
+            </div>
+        </div>
+
+        <!-- Statut -->
+        <div class="status">
+            ✅ PRODUCTION-READY | 🔒 100% DÉFENSIF | 📋 LÉGAL & ÉTHIQUE
+        </div>
+
+        <!-- Version -->
+        <div class="version">
+            v3.0 • 17 Outils • Documentation Complète Française
+        </div>
+
+        <!-- ASCII Art -->
+        <div class="ascii-art">
+    ╔════════════════════════════════╗
+    ║  Surveillance • Audit • IDS    ║
+    ║  Forensics • Honeypot • Report ║
+    ║  Compliance • Geolocation      ║
+    ╚════════════════════════════════╝
+        </div>
+    </div>
+</body>
+</html>

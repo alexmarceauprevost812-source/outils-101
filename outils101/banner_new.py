@@ -1,21 +1,28 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Banner - Affichage des logos et bannières Outils 101
+Banner Amélioré - Logos et bannières visuelles pour Outils 101
 """
 
 def print_logo_ascii():
-    """Affiche le logo ASCII art principal"""
+    """Affiche le logo ASCII art principal avec épées et bouclier"""
     logo = """
     ╔════════════════════════════════════════════════════════════╗
     ║                                                            ║
     ║            ⚔️   OUTILS 101 CYBERSÉCURITÉ   ⚔️            ║
     ║                                                            ║
-    ║                        ╭─────────╮                        ║
-    ║                       ╱     🛡️     ╲                      ║
-    ║                      │  DÉFENSIVE  │                      ║
-    ║                       ╲           ╱                       ║
-    ║                        ╰─────────╯                        ║
+    ║                      Épée Gauche                           ║
+    ║                           ⚔️                              ║
+    ║                            |                              ║
+    ║                        _____|____                          ║
+    ║                       /   🛡️    \\                       ║
+    ║                      |  DÉFENSE  |                        ║
+    ║                       \\   101   /                        ║
+    ║                        \\       /                          ║
+    ║                         ╰─────╯                           ║
+    ║                            |                              ║
+    ║                            ⚔️                              ║
+    ║                      Épée Droite                           ║
     ║                                                            ║
     ║                   ⚔️ LINUX • WINDOWS • macOS ⚔️          ║
     ║                                                            ║
@@ -27,46 +34,8 @@ def print_logo_ascii():
     print(logo)
 
 
-def print_logo_detailed():
-    """Affiche le logo détaillé avec épées et bouclier"""
-    logo_detailed = """
-    
-    ████████████████████████████████████████████████████████████████
-    
-                    ⚔️  DÉFENSE RÉSEAU ACTIVE  ⚔️
-    
-                         Épée Gauche              Épée Droite
-                              ⚔️                      ⚔️
-                               |                      |
-                          _____|____                __|___
-                         /          \\              /      \\
-                        |            |            |        |
-                         \\  🛡️ OUTILS ║ 101  /
-                          \\   DÉFENSE   /
-                           \\           /
-                            ╰─────────╯
-                         Protection Complète
-    
-    ════════════════════════════════════════════════════════════════
-    
-        📊 17 Outils • 21 Options • Détection IDS • Honeypot
-        
-    ════════════════════════════════════════════════════════════════
-    
-    """
-    print(logo_detailed)
-
-
-def print_logo_compact():
-    """Logo compact pour terminal"""
-    logo_compact = """
-    🛡️ OUTILS 101 - DÉFENSE RÉSEAU ⚔️
-    """
-    print(logo_compact)
-
-
 def print_welcome_banner():
-    """Bannière de bienvenue"""
+    """Bannière de bienvenue avec explications"""
     banner = """
     ╔═══════════════════════════════════════════════════════════════╗
     ║                                                               ║
@@ -90,23 +59,50 @@ def print_menu_header():
     """En-tête du menu principal"""
     header = """
     ┌───────────────────────────────────────────────────────┐
-    │  🛡️ MENU PRINCIPAL - OUTILS 101 v3.0                 │
+    │  🛡️ MENU PRINCIPAL - OUTILS 101 v3.0 DÉFENSIF         │
+    │                                                       │
+    │  ⚔️ ÉPÉE GAUCHE  │  🛡️ BOUCLIER  │  ⚔️ ÉPÉE DROITE  │
+    │  Intrusions    │  Réseau WiFi  │  Forensics      │
+    │                                                       │
     └───────────────────────────────────────────────────────┘
     """
     print(header)
 
 
 def print_section_header(title):
-    """En-tête de section"""
+    """En-tête de section avec décoration"""
     header = f"""
-    ╭──────────────────────────────────────────╮
-    │  🛡️ {title.center(38)}  🛡️
-    ╰──────────────────────────────────────────╯
+    ╭─────────────────────────────────────────────╮
+    │  🛡️ {title.upper().center(39)} 🛡️
+    ╰─────────────────────────────────────────────╯
     """
     print(header)
 
 
-if __name__ == "__main__":
-    print_logo_ascii()
-    print_logo_detailed()
-    print_welcome_banner()
+def print_tool_info(name, description, icon="🛡️"):
+    """Affiche les infos d'un outil"""
+    info = f"""
+    {icon} {name}
+    └─ {description}
+    """
+    print(info)
+
+
+def print_success(message):
+    """Affiche un message de succès"""
+    print(f"    ✅ {message}")
+
+
+def print_warning(message):
+    """Affiche un avertissement"""
+    print(f"    ⚠️  {message}")
+
+
+def print_error(message):
+    """Affiche une erreur"""
+    print(f"    ❌ {message}")
+
+
+def print_info(message):
+    """Affiche une info"""
+    print(f"    ℹ️  {message}")
