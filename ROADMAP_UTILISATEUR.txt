@@ -1,0 +1,359 @@
+╔═══════════════════════════════════════════════════════════════════════════╗
+║           🗺️  OUTILS 101 - ROADMAP UTILISATEUR (TON PARCOURS)             ║
+╚═══════════════════════════════════════════════════════════════════════════╝
+
+Ce fichier te montre le chemin idéal pour maîtriser Outils 101 !
+
+
+═══════════════════════════════════════════════════════════════════════════════
+⏱️ JOUR 1 - INSTALLATION & PREMIERS PAS (30 minutes)
+═══════════════════════════════════════════════════════════════════════════════
+
+[5 min] Lire : START_WINDOWS.txt ou START_HERE.md
+         ├─ Prérequis (Python, Git, Npcap)
+         └─ Les 3 étapes principales
+
+[10 min] Installer les prérequis
+         ├─ Python 3.8+ (ajoute à PATH)
+         ├─ Git
+         ├─ Npcap (redémarre après!)
+         └─ Vérifie avec: python --version, git --version
+
+[10 min] Installer Outils 101
+         ├─ Double-clique WINDOWS_COMMANDS.bat (EN ADMIN)
+         └─ Attends 2-3 minutes
+
+[5 min] Lancer l'outil
+         ├─ Double-clique run.bat (EN ADMIN)
+         └─ Tu verras le menu avec 21 options
+
+🎯 Fin du jour 1: L'outil est installé et lancé! ✅
+
+
+═══════════════════════════════════════════════════════════════════════════════
+📅 JOUR 2 - EXPLORATION BASIQUE (1 heure)
+═══════════════════════════════════════════════════════════════════════════════
+
+[15 min] Option 1: Scanner le réseau
+         ├─ Vois qui est connecté à ton WiFi
+         ├─ Crée devices.json
+         └─ Première découverte!
+
+[15 min] Option 16: Audit WiFi
+         ├─ Comprends le niveau de sécurité
+         ├─ Vois si WPA2/WPA3 est activé
+         └─ Reçois un score (0-10)
+
+[15 min] Option 20: Compliance check
+         ├─ Audit général de sécurité
+         ├─ Score 0-100
+         └─ Voir ce qui peut être amélioré
+
+[15 min] Renommer les appareils
+         ├─ Option 3: Renommer un appareil
+         ├─ Exemple: "PC de Marc", "Téléphone"
+         └─ Plus facile de s'y retrouver
+
+🎯 Fin du jour 2: Tu comprends ton réseau! ✅
+
+
+═══════════════════════════════════════════════════════════════════════════════
+🗓️ JOUR 3 - OUTILS AVANCÉS (2 heures)
+═══════════════════════════════════════════════════════════════════════════════
+
+[15 min] Lire : VERSION_3_SUMMARY.md
+         └─ Comprendre les nouveautés v3.0
+
+[20 min] Option 13: Générer un rapport HTML
+         ├─ Crée un beau rapport professionnel
+         ├─ Stocké dans reports/
+         └─ À partager ou imprimer
+
+[20 min] Option 14: Monitoring trafic
+         ├─ Voir qui parle à qui en temps réel
+         ├─ 30 secondes de monitoring
+         └─ Understand ton trafic
+
+[20 min] Option 18: Honeypot (piège)
+         ├─ Lancer un piège à attaquants
+         ├─ Voir les tentatives
+         └─ Comprendre les attaques
+
+[20 min] Option 19: Forensics (enquête)
+         ├─ Analyser les incidents de sécurité
+         ├─ Détecter les patterns d'attaque
+         └─ Récupérer du rapport
+
+[15 min] Option 17: IDS (détection d'intrusion)
+         ├─ Surveiller les anomalies
+         ├─ Détecter DDoS, scans de port
+         └─ Alertes en temps réel
+
+🎯 Fin du jour 3: Tu maîtrises les outils avancés! ✅
+
+
+═══════════════════════════════════════════════════════════════════════════════
+📆 SEMAINE 2 - APPROFONDISSEMENT (Au rythme)
+═══════════════════════════════════════════════════════════════════════════════
+
+Jour 4-5: Essayer TOUTES les options
+  ├─ Option 1-5: Découverte & ports
+  ├─ Option 6-9: DNS, SSL, GeoIP
+  ├─ Option 10-12: Automation & alertes
+  ├─ Option 13-17: Reporting & IDS
+  ├─ Option 18-20: Honeypot, Forensics, Compliance
+  └─ Comprendre ce que fait chacune
+
+Jour 6-7: Pratique sur ton propre réseau
+  ├─ Scanner quotidiennement
+  ├─ Renommer les appareils
+  ├─ Générer des rapports
+  ├─ Comparer d'une semaine à l'autre
+  └─ Noter les changements
+
+
+═══════════════════════════════════════════════════════════════════════════════
+📚 POUR LES APPRENANTS EN CYBERSÉCURITÉ
+═══════════════════════════════════════════════════════════════════════════════
+
+[Phase 1] COMPRENDRE LES BASES (Jour 1-3)
+  1. Lire README.md (tout sur l'outil)
+  2. Lire VERSION_3_SUMMARY.md (nouveautés)
+  3. Essayer Option 1 (Scanner)
+  4. Essayer Option 16 (Audit WiFi)
+  5. Essayer Option 20 (Compliance)
+
+[Phase 2] DÉCOUVRIR LES DÉTAILS (Semaine 2)
+  1. Lire NEW_TOOLS_V3.md (détails outils)
+  2. Essayer Option 18 (Honeypot)
+  3. Essayer Option 19 (Forensics)
+  4. Essayer Option 17 (IDS)
+  5. Générer rapports (Option 13)
+
+[Phase 3] MAÎTRISER (Semaine 3+)
+  1. Lire DEV_SUMMARY.md (pour les techniciens)
+  2. Regarder le code Python
+  3. Comprendre comment ça marche
+  4. Faire tes propres modifications
+  5. Lire CONTRIBUTING.md pour contribuer
+
+[Phase 4] ENSEIGNER (Si tu veux)
+  1. Utilise l'outil pour montrer les concepts
+  2. Génère des rapports pour présenter
+  3. Utilise le honeypot pour démo
+  4. Utilise la forensics pour analyser
+
+
+═══════════════════════════════════════════════════════════════════════════════
+🔄 UTILISATION RÉGULIÈRE (Après maîtrise)
+═══════════════════════════════════════════════════════════════════════════════
+
+QUOTIDIEN (5 minutes):
+  └─ Option 1: Scanner ton réseau
+    └─ Vérifier si quelqu'un d'autre s'est connecté
+
+HEBDOMADAIRE (20 minutes):
+  ├─ Option 1: Scanner complet
+  ├─ Option 16: Audit WiFi
+  ├─ Option 20: Compliance check
+  └─ Option 13: Générer un rapport
+
+MENSUEL (1 heure):
+  ├─ Audit complet du réseau
+  ├─ Comparer avec le mois dernier
+  ├─ Analyser tendances
+  ├─ Générer rapport mensuel
+  └─ Identifier améliorations
+
+EN CAS DE SUSPICION D'INTRUSION:
+  ├─ Option 1: Scanner pour les nouveaux appareils
+  ├─ Option 18: Lancer honeypot
+  ├─ Option 19: Analyser les forensics
+  ├─ Option 17: Checker IDS
+  ├─ Option 14: Monitoring trafic
+  └─ Option 13: Générer rapport d'incident
+
+
+═══════════════════════════════════════════════════════════════════════════════
+🎓 PARCOURS D'APPRENTISSAGE PAR SUJET
+═══════════════════════════════════════════════════════════════════════════════
+
+🔍 JE VEUX APPRENDRE LES SCANS RÉSEAU
+   ├─ Lis: START_HERE.md
+   ├─ Utilise: Option 1 (Scanner ARP)
+   ├─ Utilise: Option 4 (Scanner ports)
+   ├─ Utilise: Option 7 (DNS reverse)
+   ├─ Lis: README.md (section Scanner)
+   └─ Comprendre: Comment fonctionne ARP
+
+🔐 JE VEUX APPRENDRE LA SÉCURITÉ WiFi
+   ├─ Lis: README.md (section WiFi)
+   ├─ Utilise: Option 6 (Audit WiFi basic)
+   ├─ Utilise: Option 16 (Audit WiFi advanced)
+   ├─ Lis: VERSION_3_SUMMARY.md
+   └─ Comprendre: WPA2, WPA3, WEP, WPS
+
+🚨 JE VEUX APPRENDRE LA DÉTECTION D'INTRUSION
+   ├─ Lis: README.md (section IDS)
+   ├─ Utilise: Option 15 (MAC spoofing)
+   ├─ Utilise: Option 17 (IDS)
+   ├─ Utilise: Option 14 (Traffic monitor)
+   └─ Comprendre: Comment détecter les attaques
+
+🍯 JE VEUX APPRENDRE LES HONEYPOTS
+   ├─ Lis: README.md (section Honeypot)
+   ├─ Utilise: Option 18 (Lancer honeypot)
+   ├─ Lis: NEW_TOOLS_V3.md (section honeypot)
+   ├─ Regarde les logs dans logs/honeypot_alerts.json
+   └─ Comprendre: Comment piéger les attaquants
+
+🔬 JE VEUX APPRENDRE LA FORENSICS
+   ├─ Lis: README.md (section Forensics)
+   ├─ Utilise: Option 19 (Analyser incidents)
+   ├─ Lis: NEW_TOOLS_V3.md (section forensics)
+   ├─ Regarde les rapports dans logs/forensics_report.json
+   └─ Comprendre: Comment analyser les attaques
+
+✅ JE VEUX APPRENDRE LA CONFORMITÉ
+   ├─ Lis: README.md (section Compliance)
+   ├─ Utilise: Option 20 (Compliance check)
+   ├─ Lis: NEW_TOOLS_V3.md (section compliance)
+   ├─ Regarde le rapport dans logs/compliance_report.json
+   └─ Comprendre: Comment durcir son réseau
+
+
+═══════════════════════════════════════════════════════════════════════════════
+🚀 PROGRESSION SUGGÉRÉE (Petites étapes)
+═══════════════════════════════════════════════════════════════════════════════
+
+SEMAINE 1:
+  ☐ Jour 1: Installer & lancer
+  ☐ Jour 2-3: Options 1, 16, 20
+  ☐ Jour 4-5: Renommer appareils, explorer
+  ☐ Jour 6-7: Générer rapports, comprendre
+
+SEMAINE 2:
+  ☐ Essayer Option 14 (monitoring)
+  ☐ Essayer Option 18 (honeypot)
+  ☐ Essayer Option 19 (forensics)
+  ☐ Essayer Option 17 (IDS)
+  ☐ Lire documentation complète
+
+SEMAINE 3:
+  ☐ Maîtriser toutes les 21 options
+  ☐ Générer rapports professionnels
+  ☐ Analyser son propre réseau en profondeur
+  ☐ Comprendre chaque outil
+
+SEMAINE 4+:
+  ☐ Utilisation régulière (quotidien/hebdo/mensuel)
+  ☐ Approfondir certains outils
+  ☐ Lire le code Python
+  ☐ Faire tes propres modifications
+
+
+═══════════════════════════════════════════════════════════════════════════════
+📊 CHECKPOINTS - VALIDE TA PROGRESSION
+═══════════════════════════════════════════════════════════════════════════════
+
+CHECKPOINT 1 - Installation (Jour 1)
+  ☐ Python installé et trouvé
+  ☐ Git installé et trouvé
+  ☐ Npcap installé
+  ☐ Outils 101 clone & installé
+  ☐ L'outil se lance sans erreur
+
+CHECKPOINT 2 - Basiques (Jour 2-3)
+  ☐ J'ai scanné mon réseau (Option 1)
+  ☐ J'ai vérifié mon WiFi (Option 16)
+  ☐ J'ai un score de compliance (Option 20)
+  ☐ J'ai renommé mes appareils
+  ☐ J'ai un fichier devices.json
+
+CHECKPOINT 3 - Outils Avancés (Semaine 2)
+  ☐ J'ai généré un rapport HTML (Option 13)
+  ☐ J'ai lancé un honeypot (Option 18)
+  ☐ J'ai analysé les incidents (Option 19)
+  ☐ J'ai testé l'IDS (Option 17)
+  ☐ J'ai un monitoring du trafic (Option 14)
+
+CHECKPOINT 4 - Maîtrise (Semaine 3+)
+  ☐ J'utilise tous les 21 options
+  ☐ Je génère des rapports régulièrement
+  ☐ Je comprends ce que fait chaque outil
+  ☐ Je peux expliquer les résultats
+  ☐ Je peux contribuer au projet (optionnel)
+
+
+═══════════════════════════════════════════════════════════════════════════════
+💡 CONSEILS POUR RÉUSSIR
+═══════════════════════════════════════════════════════════════════════════════
+
+✅ PRENDS TON TEMPS
+   Pas besoin de tout faire en un jour
+   1-2 heures par jour suffisent
+
+✅ PRATIQUE BEAUCOUP
+   La meilleure façon d'apprendre, c'est de faire
+   Essaie toutes les options sur ton réseau
+
+✅ LIS LA DOC
+   START_WINDOWS.txt → README.md → VERSION_3_SUMMARY.md
+   Ça progresse graduellement
+
+✅ COMPARE LES RÉSULTATS
+   Fais un scan jour 1, jour 8, jour 15
+   Observe les différences
+
+✅ CRÉE DES RAPPORTS
+   Option 13 génère du beau HTML
+   Garde tes rapports pour comparer
+
+✅ NE TE BLOQUE PAS
+   Si tu comprends pas une option
+   Lis HELP.txt ou QUICK_FIX_WINDOWS.txt
+
+✅ POSE DES QUESTIONS
+   Lis INDEX.md si tu cherches quelque chose
+   Tous les fichiers y sont listés
+
+✅ CONTRIBUTE SI TU VEUX
+   Une fois que tu maîtrises
+   Lis CONTRIBUTING.md pour aider
+
+
+═══════════════════════════════════════════════════════════════════════════════
+🎯 OBJECTIFS FINAUX
+═══════════════════════════════════════════════════════════════════════════════
+
+JOUR 1-7:
+  ✅ L'outil est installé et fonctionne
+  ✅ Tu sais ce qu'est un scan réseau
+  ✅ Tu vérifies ta sécurité WiFi
+
+SEMAINE 2-4:
+  ✅ Tu maîtrises tous les outils
+  ✅ Tu génères des rapports
+  ✅ Tu comprends la sécurité réseau
+
+MOIS 2+:
+  ✅ Tu l'utilises régulièrement
+  ✅ Tu détectes les problèmes rapidement
+  ✅ Tu sécurises ton réseau comme un pro
+
+
+═══════════════════════════════════════════════════════════════════════════════
+🐧🌀 EN ROUTE!
+═══════════════════════════════════════════════════════════════════════════════
+
+Maintenant que tu sais où aller, c'est l'heure de commencer!
+
+Prochaine étape:
+  1. Lire START_WINDOWS.txt (ou START_HERE.md)
+  2. Installer (30 minutes)
+  3. Lancer (1 minute)
+  4. Explorer (24 heures)
+
+BON VOYAGE ! 🚀
+
+═══════════════════════════════════════════════════════════════════════════════

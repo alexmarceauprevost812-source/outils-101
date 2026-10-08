@@ -1,0 +1,136 @@
+═══════════════════════════════════════════════════════════════════════════════
+  OUTILS 101 - AIDE RAPIDE WINDOWS 11
+═══════════════════════════════════════════════════════════════════════════════
+
+🚀 TU VEUX JUSTE LANCER L'OUTIL MAINTENANT ?
+════════════════════════════════════════════════════════════════════════════════
+
+1️⃣  Double-clique sur : WINDOWS_COMMANDS.bat
+2️⃣  Clic droit > "Exécuter en tant qu'administrateur"
+3️⃣  Suis les instructions à l'écran
+4️⃣  Attends (ça prend 2-3 minutes)
+
+✅ C'est fini ! L'outil est prêt.
+
+Pour lancer à chaque fois : Double-clique run.bat (en admin)
+
+
+═══════════════════════════════════════════════════════════════════════════════
+❌ SI TU AS UNE ERREUR
+═══════════════════════════════════════════════════════════════════════════════
+
+ERREUR 1 : "Python n'est pas reconnu"
+────────────────────────────────────────────────────────────────────────────────
+Solution :
+1. Télécharge Python : https://www.python.org/downloads/
+2. Lance l'installateur
+3. ⚠️  COCHE "Add Python to PATH"
+4. Redémarre ton PC
+5. Relance WINDOWS_COMMANDS.bat
+
+ERREUR 2 : "OSError: Npcap is not installed"
+────────────────────────────────────────────────────────────────────────────────
+Solution :
+1. Télécharge Npcap : https://npcap.com/download/
+2. Lance l'installateur
+3. ⚠️  COCHE "Install Npcap in WinPcap API-compatible Mode"
+4. Redémarre ton PC
+5. Relance WINDOWS_COMMANDS.bat
+
+ERREUR 3 : "Access denied" ou "Permission denied"
+────────────────────────────────────────────────────────────────────────────────
+Solution :
+- Lance TOUJOURS les scripts EN ADMINISTRATEUR
+- Clic droit sur le fichier > "Exécuter en tant qu'administrateur"
+
+ERREUR 4 : "Git n'est pas installé"
+────────────────────────────────────────────────────────────────────────────────
+Solution :
+1. Télécharge Git : https://git-scm.com/download/win
+2. Lance l'installateur
+3. Redémarre ton PC
+4. Relance WINDOWS_COMMANDS.bat
+
+ERREUR 5 : "No module named 'scapy'"
+────────────────────────────────────────────────────────────────────────────────
+Solution :
+1. Ouvre Command Prompt EN ADMINISTRATEUR
+2. Tape : pip install scapy requests
+3. Attends la fin
+4. Relance : python main.py
+
+ERREUR 6 : "Je suis dans un dossier avec des espaces"
+────────────────────────────────────────────────────────────────────────────────
+Exemple du problème :
+  C:\Users\alex marceau\Desktop\source  ← "alex marceau" a un espace ❌
+
+Solution :
+  Utilise des guillemets :
+  cd "C:\Users\alex marceau\Desktop\source"
+
+  Ou crée un dossier sans espaces :
+  C:\Dev\source  ✅
+
+
+═══════════════════════════════════════════════════════════════════════════════
+✅ VÉRIFIER QUE TOUT MARCHE
+═══════════════════════════════════════════════════════════════════════════════
+
+Test 1 - Vérifier Python
+────────────────────────────────────────────────────────────────────────────────
+1. Ouvre Command Prompt
+2. Tape : python --version
+3. Doit afficher : Python 3.8.0 (ou plus récent) ✅
+
+Test 2 - Vérifier Npcap
+────────────────────────────────────────────────────────────────────────────────
+1. Ouvre Command Prompt
+2. Tape : npcap-config --version
+3. Doit afficher un numéro de version ✅
+
+Test 3 - Vérifier Scapy
+────────────────────────────────────────────────────────────────────────────────
+1. Ouvre Command Prompt
+2. Tape : python -c "import scapy; print('OK')"
+3. Doit afficher : OK ✅
+
+
+═══════════════════════════════════════════════════════════════════════════════
+🎯 APRÈS L'INSTALLATION
+═══════════════════════════════════════════════════════════════════════════════
+
+Pour lancer Outils 101 :
+1. Double-clique run.bat
+2. Clic droit > "Exécuter en tant qu'administrateur"
+
+OU manuellement :
+1. Ouvre Command Prompt EN ADMINISTRATEUR
+2. cd C:\Dev\source (ou ton dossier)
+3. python main.py
+
+Premier scan à essayer :
+- Menu option 1 : Scanner le réseau
+- Menu option 16 : Audit WiFi
+- Menu option 20 : Vérifier la compliance
+
+
+═══════════════════════════════════════════════════════════════════════════════
+📞 JE SUIS BLOQUÉ COMPLÈTEMENT
+═══════════════════════════════════════════════════════════════════════════════
+
+Copie-colle ceci et envoie l'output :
+
+1. python --version
+2. pip --version
+3. git --version
+4. npcap-config --version (ou "This command is not recognized")
+5. L'erreur exacte (copie-la entièrement)
+
+On va trouver la solution ensemble ! 🐧💪
+
+
+═══════════════════════════════════════════════════════════════════════════════
+Version : Outils 101 v3.0
+Plateforme : Windows 11 64-bit
+Date : 2024
+═══════════════════════════════════════════════════════════════════════════════

@@ -1,0 +1,409 @@
+╔═══════════════════════════════════════════════════════════════════════════╗
+║                          🆘 AIDE D'URGENCE 🆘                            ║
+║                       Je suis bloqué, aide-moi !                          ║
+╚═══════════════════════════════════════════════════════════════════════════╝
+
+
+⚡ TU ES BLOQUÉ ? CHERCHE TON ERREUR EXACTE CI-DESSOUS ⚡
+
+
+═══════════════════════════════════════════════════════════════════════════════
+❌ "PYTHON N'EST PAS RECONNU COMME UNE COMMANDE INTERNE"
+═══════════════════════════════════════════════════════════════════════════════
+
+Erreur complète:
+  'python' is not recognized as an internal or external command
+
+Cause:
+  Python n'est pas installé OU pas dans PATH
+
+Solution:
+  1. Télécharge Python : https://www.python.org/downloads/
+  2. Lance l'installateur
+  3. ⚠️ COCHEZ "Add Python to PATH" (IMPORTANT!)
+  4. Redémarre ton PC
+  5. Vérifie : tape "python --version"
+  6. Doit afficher "Python 3.x.x"
+
+Si ça marche pas :
+  1. Réinstalle Python
+  2. Cette fois, PENDANT L'INSTALLATION:
+     - Coche "Add Python to PATH"
+     - Coche "Install for all users"
+  3. Redémarre ton PC
+
+
+═══════════════════════════════════════════════════════════════════════════════
+❌ "OSERROR: NPCAP IS NOT INSTALLED OR NOT IN THE PATH"
+═══════════════════════════════════════════════════════════════════════════════
+
+Erreur complète:
+  OSError: Npcap is not installed or not in the PATH
+
+Cause:
+  Npcap (le driver réseau) n'est pas installé
+
+Solution:
+  1. Télécharge Npcap : https://npcap.com/download/
+  2. Lance l'installateur (.exe)
+  3. ⚠️ COCHEZ "Install Npcap in WinPcap API-compatible Mode"
+  4. Termine l'installation
+  5. ⚠️ REDÉMARRE TON PC (IMPORTANT!)
+  6. Réessaie l'outil
+
+Important:
+  - Cette erreur signifie que ton outil ne peut pas scanner le réseau
+  - Npcap est OBLIGATOIRE pour qu'Outils 101 marche
+  - Prend 3 minutes à installer
+
+
+═══════════════════════════════════════════════════════════════════════════════
+❌ "ACCESS DENIED" ou "PERMISSION DENIED"
+═══════════════════════════════════════════════════════════════════════════════
+
+Erreur complète:
+  PermissionError: [Errno 13] Permission denied
+  OU
+  Access denied
+
+Cause:
+  L'outil doit être lancé EN ADMINISTRATEUR
+
+Solution:
+  1. Clic droit sur WINDOWS_COMMANDS.bat (ou run.bat)
+  2. Clique "Exécuter en tant qu'administrateur"
+  3. Clique "Oui" si demandé
+  4. Réessaie
+
+Rappel important:
+  ⚠️ TOUJOURS lancer les scripts .bat EN ADMINISTRATEUR
+  ⚠️ TOUJOURS lancer en mode administrateur
+
+
+═══════════════════════════════════════════════════════════════════════════════
+❌ "GIT N'EST PAS RECONNU"
+═══════════════════════════════════════════════════════════════════════════════
+
+Erreur complète:
+  'git' is not recognized as an internal or external command
+
+Cause:
+  Git n'est pas installé
+
+Solution:
+  1. Télécharge Git : https://git-scm.com/download/win
+  2. Lance l'installateur
+  3. Accepte tous les paramètres par défaut (ou "Next" partout)
+  4. Redémarre ton PC
+  5. Vérifie : tape "git --version"
+  6. Doit afficher "git version 2.x.x"
+
+Si ça marche pas:
+  1. Réinstalle Git
+  2. Redémarre
+  3. Réessaie
+
+
+═══════════════════════════════════════════════════════════════════════════════
+❌ "NO MODULE NAMED 'SCAPY'"
+═══════════════════════════════════════════════════════════════════════════════
+
+Erreur complète:
+  ModuleNotFoundError: No module named 'scapy'
+  OU
+  ImportError: No module named scapy
+
+Cause:
+  Les dépendances Python ne sont pas installées
+
+Solution:
+  1. Ouvre Command Prompt EN ADMINISTRATEUR
+  2. Tape ceci (puis Entrée):
+     pip install scapy requests
+  3. Attends que ça finisse (1-2 minutes)
+  4. Doit afficher "Successfully installed..."
+  5. Relance l'outil : python main.py
+
+Si ça marche pas:
+  1. Tape : pip install --upgrade pip
+  2. Puis : pip install scapy requests
+  3. Puis réessaie : python main.py
+
+
+═══════════════════════════════════════════════════════════════════════════════
+❌ "FAILED TO CLONE REPOSITORY"
+═══════════════════════════════════════════════════════════════════════════════
+
+Erreur complète:
+  fatal: unable to access 'https://github.com/...'
+
+Cause:
+  Connexion internet problème OU repo inaccessible
+
+Solution:
+  1. Vérifie que tu es connecté à internet
+  2. Ouvre https://github.com/Alexmarceauprevost812/source
+  3. Doit charger le repo
+  4. Si ça charge, réessaie :
+     git clone https://github.com/Alexmarceauprevost812/source.git
+  5. Si ça ne charge pas, vérifie ton VPN/firewall
+
+Alternative:
+  Télécharge le ZIP du repo manuellement et extrais-le
+
+
+═══════════════════════════════════════════════════════════════════════════════
+❌ "DIRECTORY ALREADY EXISTS"
+═══════════════════════════════════════════════════════════════════════════════
+
+Erreur complète:
+  fatal: destination path 'source' already exists and is not an empty directory
+
+Cause:
+  Tu as déjà cloné le repo une fois
+
+Solution:
+  Option 1 (simple):
+    1. Va dans le dossier "source" existant
+    2. Tape : cd source
+    3. Tape : git pull
+    4. Cela met à jour le code
+
+  Option 2 (réinstaller):
+    1. Supprime le dossier "source" entièrement
+    2. Relance : git clone https://github.com/Alexmarceauprevost812/source.git
+    3. cd source
+    4. pip install -r requirements.txt
+
+
+═══════════════════════════════════════════════════════════════════════════════
+❌ "NE PEUT PAS ENTRER DANS LE DOSSIER"
+═══════════════════════════════════════════════════════════════════════════════
+
+Erreur complète:
+  The system cannot find the path specified.
+  OU
+  No such file or directory
+
+Cause:
+  Le chemin n'existe pas ou le dossier n'a pas été créé
+
+Solution:
+  1. Crée le dossier manuellement:
+     mkdir C:\Dev
+  2. Va dedans:
+     cd C:\Dev
+  3. Clone le repo:
+     git clone https://github.com/Alexmarceauprevost812/source.git
+  4. Va dans le dossier:
+     cd source
+  5. Installe:
+     pip install -r requirements.txt
+
+Attention à l'espace:
+  Si ton dossier contient des espaces (ex: "C:\Users\Alex Marceau")
+  Mets-le entre guillemets:
+    cd "C:\Users\Alex Marceau\Desktop"
+
+
+═══════════════════════════════════════════════════════════════════════════════
+❌ "TIMEOUT" ou "CONNEXION REFUSE"
+═══════════════════════════════════════════════════════════════════════════════
+
+Erreur complète:
+  Connection timed out
+  OU
+  Connection refused
+  OU
+  [Errno 10061]
+
+Cause:
+  Réseau problème ou firewall bloque
+
+Solution:
+  1. Redémarre ton routeur (30 secondes)
+  2. Réessaie
+  3. Si toujours pas:
+     - Vérifie ton firewall Windows
+     - Ajoute Python à la whitelist
+     - Ajoute Git à la whitelist
+
+
+═══════════════════════════════════════════════════════════════════════════════
+❌ "CERTIFICAT SSL INVALIDE"
+═══════════════════════════════════════════════════════════════════════════════
+
+Erreur complète:
+  SSL: CERTIFICATE_VERIFY_FAILED
+  OU
+  certificate verify failed
+
+Cause:
+  Problème de certificat SSL (rare)
+
+Solution:
+  1. Ouvre Command Prompt EN ADMINISTRATEUR
+  2. Tape:
+     pip install --trusted-host pypi.org --trusted-host files.pythonhosted.org scapy requests
+  3. Attends la fin
+  4. Réessaie : python main.py
+
+Alternatif:
+  1. Désactive temporairement l'antivirus
+  2. Réessaie l'installation
+  3. Réactive-le après
+
+
+═══════════════════════════════════════════════════════════════════════════════
+❌ "LE SCRIPT BAT NE FAIT RIEN" (Double-clic = rien)
+═══════════════════════════════════════════════════════════════════════════════
+
+Cause:
+  Le script s'est fermé trop vite OU pas en admin
+
+Solution:
+  1. Clic droit sur WINDOWS_COMMANDS.bat
+  2. Clique "Exécuter en tant qu'administrateur"
+  3. Laisse la fenêtre ouverte (ne ferme pas)
+  4. Suis les étapes
+
+Alternative (si ça marche pas):
+  1. Ouvre Command Prompt EN ADMINISTRATEUR
+  2. Va dans le dossier:
+     cd C:\Users\[ton_user]\Desktop\source
+  3. Lance le script:
+     WINDOWS_COMMANDS.bat
+  4. Suis les étapes
+
+
+═══════════════════════════════════════════════════════════════════════════════
+❌ "POWERSHELL REFUSE DE LANCER LE SCRIPT"
+═══════════════════════════════════════════════════════════════════════════════
+
+Erreur complète:
+  cannot be loaded because running scripts is disabled on this system
+
+Solution:
+  1. Ouvre PowerShell EN ADMINISTRATEUR
+  2. Tape ceci (puis Entrée):
+     Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+  3. Réponds "Y" (Yes) si demandé
+  4. Maintenant relance le script:
+     .\install.ps1
+  5. Suis les étapes
+
+
+═══════════════════════════════════════════════════════════════════════════════
+❌ "MON ERREUR N'EST PAS DANS LA LISTE"
+═══════════════════════════════════════════════════════════════════════════════
+
+Copie-colle l'erreur exacte (la rouge/orange) et:
+
+1. Vérifie que Python est installé:
+   python --version
+
+2. Vérifie que Git est installé:
+   git --version
+
+3. Vérifie que Npcap est installé:
+   npcap-config --version
+
+4. Essaie de réinstaller les dépendances:
+   pip install -r requirements.txt
+
+5. Redémarre ton PC
+
+6. Réessaie
+
+Si toujours pas:
+  - Lis QUICK_FIX_WINDOWS.txt (plus détaillé)
+  - Lis WINDOWS_INSTALL_SIMPLE.md (guide complet)
+  - Lis START_WINDOWS.txt (explique tout)
+
+
+═══════════════════════════════════════════════════════════════════════════════
+✅ TU N'ES TOUJOURS PAS BLOQUÉ ?
+═══════════════════════════════════════════════════════════════════════════════
+
+Teste ceci:
+
+1. python --version
+   → Doit afficher "Python 3.x.x"
+
+2. git --version
+   → Doit afficher "git version 2.x.x"
+
+3. npcap-config --version
+   → Doit afficher "Npcap version 1.x.x"
+
+4. python -c "import scapy"
+   → Pas d'erreur = OK
+
+Si tout affiche OK:
+  1. Double-clique run.bat
+  2. Clic droit > "Exécuter en tant qu'administrateur"
+  3. L'outil doit se lancer !
+
+
+═══════════════════════════════════════════════════════════════════════════════
+📞 RÉSUMÉ RAPIDE
+═══════════════════════════════════════════════════════════════════════════════
+
+Erreur Python             → Installe Python + redémarre
+Erreur Npcap            → Installe Npcap + redémarre
+Erreur Permission       → Lance en ADMINISTRATEUR
+Erreur Git              → Installe Git + redémarre
+Erreur Scapy            → pip install scapy requests
+Erreur Clonage          → Vérifie internet ou clone manuellement
+
+99% DES ERREURS VIENNENT DE :
+  ❌ Pas en administrateur
+  ❌ Npcap pas installé
+  ❌ Python pas dans PATH
+  ❌ PC pas redémarré après install
+
+
+═══════════════════════════════════════════════════════════════════════════════
+🎯 MA SOLUTION NUMÉRO 1
+═══════════════════════════════════════════════════════════════════════════════
+
+Si tu es VRAIMENT bloqué, fais ceci dans l'ordre:
+
+1. Redémarre ton PC (30 secondes)
+2. Réinstalle Python (ajoute à PATH)
+3. Réinstalle Npcap (redémarre après)
+4. Réinstalle Git
+5. Redémarre ton PC
+6. Double-clique WINDOWS_COMMANDS.bat (EN ADMIN)
+7. Si ça marche pas, dis-moi la nouvelle erreur
+
+90% du temps, ça marche après ces étapes.
+
+
+═══════════════════════════════════════════════════════════════════════════════
+🆘 C'EST VRAIMENT L'URGENCE ABSOLUE
+═══════════════════════════════════════════════════════════════════════════════
+
+Tu es bloqué et rien ne marche?
+
+1. Fais une capture d'écran de l'erreur
+2. Copie l'erreur exacte (le texte rouge/orange)
+3. Dis-moi:
+   - python --version
+   - git --version
+   - npcap-config --version
+   - L'erreur complète
+
+On trouvera une solution ensemble! 🐧🌀
+
+
+═══════════════════════════════════════════════════════════════════════════════
+BON COURAGE ! 💪
+═══════════════════════════════════════════════════════════════════════════════
+
+L'installation prend 5 minutes une fois que tu as les prérequis.
+Après ça, ça marche TRÈS bien.
+
+Allez, tu vas y arriver ! 🚀
+
+═══════════════════════════════════════════════════════════════════════════════

@@ -1,0 +1,223 @@
+╔═══════════════════════════════════════════════════════════════════════════╗
+║                  OUTILS 101 - DÉMARRAGE WINDOWS 11                        ║
+║                     🐧🌀 COMMENCEZ ICI 🐧🌀                              ║
+╚═══════════════════════════════════════════════════════════════════════════╝
+
+⏱️  TEMPS ESTIMÉ : 5 minutes
+
+═══════════════════════════════════════════════════════════════════════════════
+📋 AVANT TOUT - VÉRIFIER 3 LOGICIELS
+═══════════════════════════════════════════════════════════════════════════════
+
+Ouvre Command Prompt et vérifie qu'ils sont installés :
+
+1️⃣  Python 3.8+
+   Commande : python --version
+   Résultat : Python 3.8.0 (ou plus récent) ✅
+
+   Si ❌ : Télécharge https://www.python.org/downloads/
+          COCHE "Add Python to PATH"
+
+2️⃣  Git
+   Commande : git --version
+   Résultat : git version 2.x.x ✅
+
+   Si ❌ : Télécharge https://git-scm.com/download/win
+
+3️⃣  Npcap (IMPORTANT pour le scan WiFi)
+   Commande : npcap-config --version
+   Résultat : Npcap version 1.x.x ✅
+
+   Si ❌ : Télécharge https://npcap.com/download/
+          COCHE "Install Npcap in WinPcap API-compatible Mode"
+          REDÉMARRE TON PC
+
+⚠️  SI TU N'INSTALLES PAS NPCAP, CERTAINES FONCTIONS NE MARCHERONT PAS !
+
+
+═══════════════════════════════════════════════════════════════════════════════
+🚀 INSTALLATION EN 3 CLICS (LA PLUS FACILE)
+═══════════════════════════════════════════════════════════════════════════════
+
+1️⃣  Double-clique sur : WINDOWS_COMMANDS.bat
+
+2️⃣  Clic droit → "Exécuter en tant qu'administrateur"
+
+3️⃣  ATTENDS QUE CE MESSAGE S'AFFICHE :
+    "╔════════════════════════════════════════════════════════════╗"
+    "║   INSTALLATION TERMINÉE ! ✅                               ║"
+    "╚════════════════════════════════════════════════════════════╝"
+
+✅ FINI ! Passe à la section suivante.
+
+
+═══════════════════════════════════════════════════════════════════════════════
+🎯 LANCER L'OUTIL (À CHAQUE FOIS)
+═══════════════════════════════════════════════════════════════════════════════
+
+2 choix :
+
+OPTION 1 - La plus facile :
+  1. Double-clique run.bat
+  2. Clic droit > "Exécuter en tant qu'administrateur"
+  3. L'outil démarre !
+
+OPTION 2 - Terminal :
+  1. Ouvre Command Prompt EN ADMINISTRATEUR
+  2. Tape : cd C:\Dev\source  (ou ton dossier)
+  3. Tape : python main.py
+  4. C'est parti !
+
+⚠️  TOUJOURS EN ADMINISTRATEUR (certaines fonctions le demandent)
+
+
+═══════════════════════════════════════════════════════════════════════════════
+📊 MENU PRINCIPAL (Tu verras ça une fois lancé)
+═══════════════════════════════════════════════════════════════════════════════
+
+ 1. 🔍 Scanner le réseau
+ 2. 📋 Voir les appareils connus
+ 3. 🏷️  Renommer un appareil
+ 4. 🔓 Scanner les ports ouverts
+ 5. 🔍 Auditer un appareil
+ 6. 🛡️ Audit sécurité WiFi
+ 7. 🌐 DNS Reverse Lookup
+ 8. 🗺️ Géolocalisation IP
+ 9. 📜 Audit SSL/TLS
+10. ⏱️ Automatisation
+... et 11 autres options
+
+
+═══════════════════════════════════════════════════════════════════════════════
+🎓 PREMIERS PAS RECOMMANDÉS
+═══════════════════════════════════════════════════════════════════════════════
+
+Option 1 (Scanner le réseau)
+  → Découvre qui est connecté à ton WiFi
+  → Dure ~30 secondes
+  → Crée devices.json avec la liste
+
+Option 16 (Audit sécurité WiFi)
+  → Vérifie la sécurité de ton WiFi
+  → Donne un score sur 10
+  → Recommande des améliorations
+
+Option 20 (Compliance)
+  → Audit général de sécurité
+  → Score 0-100
+  → Liste les problèmes à fixer
+
+
+═══════════════════════════════════════════════════════════════════════════════
+❌ J'AI UNE ERREUR
+═══════════════════════════════════════════════════════════════════════════════
+
+Erreur : "Python n'est pas reconnu"
+Cause : Python pas installé ou pas dans PATH
+Solution :
+  - Télécharge https://www.python.org/downloads/
+  - COCHE "Add Python to PATH"
+  - Redémarre ton PC
+
+Erreur : "OSError: Npcap is not installed"
+Cause : Npcap pas installé ou mal configuré
+Solution :
+  - Télécharge https://npcap.com/download/
+  - COCHE "Install Npcap in WinPcap API-compatible Mode"
+  - Redémarre ton PC
+
+Erreur : "Access denied" ou "Permission denied"
+Cause : Pas lancé en administrateur
+Solution :
+  - TOUJOURS lancer en ADMINISTRATEUR
+  - Clic droit > "Exécuter en tant qu'administrateur"
+
+Erreur : "Git n'est pas installé"
+Cause : Git pas installé
+Solution :
+  - Télécharge https://git-scm.com/download/win
+  - Redémarre après installation
+
+Erreur : "No module named 'scapy'"
+Cause : Dépendances Python non installées
+Solution :
+  - Command Prompt EN ADMINISTRATEUR
+  - Tape : pip install scapy requests
+  - Relance : python main.py
+
+Pour d'autres erreurs :
+  → Lis QUICK_FIX_WINDOWS.txt
+  → Ou WINDOWS_INSTALL_SIMPLE.md
+
+
+═══════════════════════════════════════════════════════════════════════════════
+✅ VÉRIFICATIONS RAPIDES
+═══════════════════════════════════════════════════════════════════════════════
+
+Tout est bien installé ? Teste ceci :
+
+1. python --version            → Doit afficher "Python 3.x.x"
+2. git --version               → Doit afficher "git version 2.x.x"
+3. npcap-config --version      → Doit afficher "Npcap version 1.x.x"
+4. python -c "import scapy"    → Pas d'erreur = OK
+
+Si tout OK ✅ → Lance l'outil !
+
+
+═══════════════════════════════════════════════════════════════════════════════
+📁 FICHIERS IMPORTANTS
+═══════════════════════════════════════════════════════════════════════════════
+
+WINDOWS_COMMANDS.bat           → Installation automatique
+run.bat                        → Lancer l'outil
+WINDOWS_INSTALL_SIMPLE.md      → Guide complet (si tu veux comprendre)
+QUICK_FIX_WINDOWS.txt          → Erreurs + solutions rapides
+README.md                      → Documentation générale
+main.py                        → Point d'entrée de l'outil
+
+
+═══════════════════════════════════════════════════════════════════════════════
+🎯 RÉSUMÉ (LES 3 ÉTAPES)
+═══════════════════════════════════════════════════════════════════════════════
+
+1. PRÉPARATION
+   Installe Python, Git, Npcap
+   (2-3 minutes chacun)
+
+2. INSTALLATION
+   Double-clique WINDOWS_COMMANDS.bat (Admin)
+   (2-3 minutes)
+
+3. LANCEMENT
+   Double-clique run.bat (Admin)
+   (Immédiat)
+
+✅ BOUM ! C'est lancé ! 🎉
+
+
+═══════════════════════════════════════════════════════════════════════════════
+💡 CONSEILS UTILES
+═══════════════════════════════════════════════════════════════════════════════
+
+• Toujours lancer EN ADMINISTRATEUR (droits requis)
+• Le premier scan prend ~30 secondes (normal)
+• Les données se sauvent dans logs/ automatiquement
+• Tu peux arrêter n'importe quand avec Ctrl+C
+• Si tu changes de PC, réinstalle (5 min)
+• Npcap est OBLIGATOIRE pour le scan WiFi
+
+
+═══════════════════════════════════════════════════════════════════════════════
+🐧🌀 C'EST PARTI !
+═══════════════════════════════════════════════════════════════════════════════
+
+1. Double-clique WINDOWS_COMMANDS.bat
+2. Attends la fin
+3. Double-clique run.bat
+4. Explore le menu
+
+Bonne utilisation ! 🛡️✨
+
+═══════════════════════════════════════════════════════════════════════════════
+Outils 101 v3.0 | Windows 11 64-bit | Production-Ready ✅
+═══════════════════════════════════════════════════════════════════════════════

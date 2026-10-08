@@ -2,6 +2,21 @@
 
 Outil complet en Python3 pour auditer et surveiller ton réseau WiFi local. **À usage défensif uniquement** sur ton propre réseau.
 
+---
+
+## 🚀 **DÉMARRAGE RAPIDE WINDOWS 11**
+
+👉 **[LIS CE FICHIER D'ABORD](START_WINDOWS.txt)** ← Clique ici !
+
+**Résumé en 3 clics** :
+1. Double-clique `WINDOWS_COMMANDS.bat` (Admin)
+2. Attends 2-3 min
+3. Double-clique `run.bat` (Admin)
+
+✅ Boum, c'est lancé !
+
+---
+
 ## 🎯 Fonctionnalités Complètes
 
 ### 🔍 Découverte Réseau
@@ -88,8 +103,8 @@ Outil complet en Python3 pour auditer et surveiller ton réseau WiFi local. **À
 
 ### Linux
 ```bash
-git clone <repo>
-cd outils101
+git clone https://github.com/Alexmarceauprevost812/source.git
+cd source
 
 # Installer les dépendances
 pip install -r requirements.txt
@@ -98,20 +113,34 @@ pip install -r requirements.txt
 sudo python3 main.py
 ```
 
-### Windows
-```bash
-git clone <repo>
-cd outils101
+### Windows 11 (FACILE)
+**Prérequis** : Python 3.8+ + Git + Npcap (https://npcap.com)
 
-# Installer Npcap (pour scapy)
-# Télécharge sur: https://npcap.com/
+**Option 1 : Script Automatique** ⭐
+```batch
+# 1. Double-clique sur WINDOWS_COMMANDS.bat
+# 2. Clic droit > Exécuter en tant qu'administrateur
+# 3. Attends la fin
+```
 
-# Installer les dépendances
+**Option 2 : PowerShell**
+```powershell
+# 1. Ouvre PowerShell EN ADMINISTRATEUR
+# 2. Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+# 3. .\install.ps1
+```
+
+**Option 3 : Manuel**
+```cmd
+# 1. Command Prompt EN ADMINISTRATEUR
+cd C:\Dev
+git clone https://github.com/Alexmarceauprevost812/source.git
+cd source
 pip install -r requirements.txt
-
-# Lancer en mode Administrateur
 python main.py
 ```
+
+📖 **Guide complet Windows** : `WINDOWS_INSTALL_SIMPLE.md`
 
 ### macOS
 ```bash
